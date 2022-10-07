@@ -11,14 +11,14 @@ public class StackExample {
 
         System.out.println(stack);
 
-        System.out.println(stack.peek());
+        System.out.println("Peek: " + stack.peek());
 
-        System.out.println(stack.pop());
+        System.out.println("Pop: " + stack.pop());
 
         System.out.println(stack);
 
-        System.out.println(stack.search(3));
+        System.out.println("Search 3: " + stack.search(3));
 
-        System.out.println(stack.search(6));
+        System.out.println("Search 6: " + stack.search(6));
     }
 }
