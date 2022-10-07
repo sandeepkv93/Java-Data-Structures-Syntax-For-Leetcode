@@ -1,7 +1,8 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class ArrayListExamples {
+public class ArrayListExample {
     public static void main(String[] args) {
         List<Integer> list1 = new ArrayList<>();
         list1.add(1);
@@ -47,5 +48,26 @@ public class ArrayListExamples {
         }
 
         System.out.println();
+
+        // Create a list from Array Mutable
+        List<Integer> list2 = Arrays.asList(1, 3, 5, 7, 9);
+
+        // print the list
+        for (int ele : list2) {
+            System.out.print(ele + " ");
+        }
+
+        System.out.println();
+
+        // Create a list from Array Immutable
+        List<Integer> list3 = List.of(1, 3, 5, 7, 9);
+
+        // print the list
+
+        for (int ele : list3) {
+            System.out.print(ele + " ");
+        }
+
+        // list3.set(1, 10); // throws UnsupportedOperationException
     }
 }
