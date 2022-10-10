@@ -100,7 +100,5 @@ public class StringExample {
 
         // Convert a double to a string
         String str11 = String.valueOf(d);
-
-        Character.isMirrored('a');
     }
 }
