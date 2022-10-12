@@ -1,7 +1,4 @@
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class ArraysExample {
     public static void main(String[] args) {
@@ -59,6 +56,19 @@ public class ArraysExample {
         Integer[] arr3 = list.toArray(new Integer[0]);
 
         for (int ele : arr3) {
+            System.out.print(ele + " ");
+        }
+
+        System.out.println();
+
+
+        // Convert Priority Queue to array
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>((a, b) -> a - b);
+        minHeap.addAll(List.of(1, 2, 3, 4, 5));
+
+        Integer[] arr4 = minHeap.toArray(new Integer[0]);
+
+        for (int ele : arr4) {
             System.out.print(ele + " ");
         }
 
